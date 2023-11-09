@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Angka 1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editAngka1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editAngka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editAngka1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Angka 2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editAngka2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editAngka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:onClick="operasi"
+        android:text="Tambah"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butKurang"
+        app:layout_constraintEnd_toStartOf="@+id/butKurang"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/butKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="operasi"
+        android:text="Kurang"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butKali"
+        app:layout_constraintEnd_toStartOf="@+id/butKali"
+        app:layout_constraintStart_toEndOf="@+id/butTambah" />
+
+    <Button
+        android:id="@+id/butKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="9dp"
+        android:onClick="operasi"
+        android:text="Kali"
+        app:layout_constraintEnd_toStartOf="@+id/butBagi"
+        app:layout_constraintStart_toEndOf="@+id/butKurang"
+        app:layout_constraintTop_toBottomOf="@+id/editAngka2" />
+
+    <Button
+        android:id="@+id/butBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:onClick="operasi"
+        android:text="Bagi"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butKali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/butKali" />
+
+    <TextView
+        android:id="@+id/textHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="@+id/butKurang"
+        app:layout_constraintTop_toBottomOf="@+id/butKurang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

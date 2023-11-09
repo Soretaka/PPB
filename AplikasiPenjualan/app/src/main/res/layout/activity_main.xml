@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNamaPembeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:text="Nama Pembeli :"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ProsesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="PROSES"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/editUangBayar" />
+
+    <EditText
+        android:id="@+id/editNamaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editNamaPembeli"
+        app:layout_constraintTop_toBottomOf="@+id/editNamaPembeli" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="Nama Barang :"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editNamaBarang"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:text="Harga : Rp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editHarga"
+        app:layout_constraintEnd_toStartOf="@+id/editHarga" />
+
+    <EditText
+        android:id="@+id/editHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editJumlahBarang"
+        app:layout_constraintTop_toBottomOf="@+id/editJumlahBarang" />
+
+    <EditText
+        android:id="@+id/editJumlahBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editNamaBarang"
+        app:layout_constraintTop_toBottomOf="@+id/editNamaBarang" />
+
+    <EditText
+        android:id="@+id/editUangBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editHarga"
+        app:layout_constraintTop_toBottomOf="@+id/editHarga" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        android:text="Jumlah Barang :"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editJumlahBarang"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUangBayar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Uang Bayar : "
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editUangBayar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/NamaPembeliText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="43dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/NamaBarangText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/NamaPembeliText"
+        app:layout_constraintTop_toBottomOf="@+id/NamaPembeliText" />
+
+    <TextView
+        android:id="@+id/JumlahBarangText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/NamaBarangText"
+        app:layout_constraintTop_toBottomOf="@+id/NamaBarangText" />
+
+    <TextView
+        android:id="@+id/HargaBarangText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/JumlahBarangText"
+        app:layout_constraintTop_toBottomOf="@+id/JumlahBarangText" />
+
+    <TextView
+        android:id="@+id/TotalBelanjaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/UangBayarText"
+        app:layout_constraintTop_toBottomOf="@+id/UangBayarText" />
+
+    <TextView
+        android:id="@+id/UangBayarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/HargaBarangText"
+        app:layout_constraintTop_toBottomOf="@+id/HargaBarangText" />
+
+    <TextView
+        android:id="@+id/BonusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/UangKembalianText"
+        app:layout_constraintTop_toBottomOf="@+id/UangKembalianText" />
+
+    <TextView
+        android:id="@+id/UangKembalianText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/TotalBelanjaText"
+        app:layout_constraintTop_toBottomOf="@+id/TotalBelanjaText" />
+
+    <Button
+        android:id="@+id/HapusDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        android:text="HAPUS DATA"
+        app:layout_constraintStart_toStartOf="@+id/KeteranganText"
+        app:layout_constraintTop_toBottomOf="@+id/KeteranganText" />
+
+    <Button
+        android:id="@+id/KeluarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="1dp"
+        android:text="KELUAR"
+        app:layout_constraintStart_toEndOf="@+id/HapusDataButton"
+        app:layout_constraintTop_toTopOf="@+id/HapusDataButton" />
+
+    <TextView
+        android:id="@+id/KeteranganText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/BonusText"
+        app:layout_constraintTop_toBottomOf="@+id/BonusText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
