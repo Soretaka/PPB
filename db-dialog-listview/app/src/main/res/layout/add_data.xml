@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/masukkannotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Enter Notes"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/masukkannrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/masukkannotes"
+        android:hint="Enter NRP"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/masukkannama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/masukkannrp"
+        android:hint="Enter Nama"
+        android:singleLine="true" />
+
+</RelativeLayout>

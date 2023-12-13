@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/masukkanid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID"
+        android:singleLine="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:editable="false">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/masukkannotes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notes"
+        android:singleLine="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/masukkannrp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Medicine"
+        android:singleLine="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/masukkannama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Nama"
+        android:singleLine="true"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Masukkan ID :"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Masukkan Note :"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/masukkanid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Masukkan NRP :"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/masukkannotes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Masukkan Nama :"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/masukkannrp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
